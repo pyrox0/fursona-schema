@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pyrox.dev/schemas/sonas",
+  "title": "Schema for .well-known/fursona",
+  "description": "A description of someone's fursona(s).",
+  "type": "object",
+  "properties": {
+    "sonas": {
+      "description": "The list of fursonas for this person.",
+      "type": "array",
+      "items": {
+        "$ref": "/schemas/sona"
+      }
+    }
+  },
+  "required": ["sonas"],
+  "$defs": {
+    "sona": {
+      "$id": "/schemas/sona",
+      "description": "A single fursona",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "pronouns": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "species": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "http",
+            "https",
+            "gemeni",
+            "ftp"
+          ]
+        },
+        "age": {
+          "type": "integer"
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "#([0-9][a-f]){3,6}"
+          }
+        }
+      }
+    }
+  }
+}
