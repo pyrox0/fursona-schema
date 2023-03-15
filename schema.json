@@ -38,7 +38,7 @@
           "qt-uri-protocols": [
             "http",
             "https",
-            "gemeni",
+            "gemini",
             "ftp"
           ]
         },
