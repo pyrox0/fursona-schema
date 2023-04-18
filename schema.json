@@ -42,6 +42,16 @@
             "ftp"
           ]
         },
+        "profile-picture": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "http",
+            "https",
+            "gemeni",
+            "ftp"
+          ]
+        },
         "age": {
           "type": "integer"
         },
