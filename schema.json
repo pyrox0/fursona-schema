@@ -32,6 +32,10 @@
         "species": {
           "type": "string"
         },
+        "description": {
+          "type": "string",
+          "maxLength": 250
+        },
         "ref": {
           "type": "string",
           "format": "uri",
