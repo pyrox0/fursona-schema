@@ -1,0 +1,21 @@
+{
+    "sonas": [
+        {
+            "name": "Example Fursona",
+            "pronouns": "They/Them",
+            "gender": "Nonbinary",
+            "species": "Species",
+            "description": "A description of the fursona, max 250 characters",
+            "ref": "https://example.com/ref",
+            "avatar": "http://example.com/avatar.png",
+            "age": 25,
+            "colors": [
+                "#ff0000",
+                "#0f0",
+                "#00f"
+            ]
+        }
+    ]
+}
+
+
