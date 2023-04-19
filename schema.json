@@ -59,7 +59,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "#([0-9][a-f]){3,6}"
+            "pattern": "#([0-9a-f]){3,6}"
           }
         }
       }
