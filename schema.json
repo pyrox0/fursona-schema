@@ -46,7 +46,7 @@
             "ftp"
           ]
         },
-        "profile-picture": {
+        "avatar": {
           "type": "string",
           "format": "uri",
           "qt-uri-protocols": [
