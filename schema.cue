@@ -23,7 +23,7 @@ import (
 	ref?: =~"(https?|ftp|gemini)(:\/\/).+"
 	avatar?: =~"(https?|ftp|gemini)(:\/\/).+"
 	age?: int
-	birthdate:? string
+	birthdate?: string
 	description: strings.MaxRunes(250)
 	colors?: [...=~"#([0-9a-f]){3,6}"]
 }
