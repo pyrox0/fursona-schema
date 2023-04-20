@@ -60,8 +60,7 @@
           "type": "integer"
         },
         "birthdate": {
-          "type": "string",
-          "format": "datetime",
+          "type": "string"
         },
         "colors": {
           "type": "array",
