@@ -9,6 +9,7 @@
             "ref": "https://example.com/ref",
             "avatar": "http://example.com/avatar.png",
             "age": 25,
+            "birthdate": "1996-01-01T20:20:39+00:00",
             "colors": [
                 "#ff0000",
                 "#0f0",

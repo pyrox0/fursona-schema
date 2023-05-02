@@ -59,6 +59,9 @@
         "age": {
           "type": "integer"
         },
+        "birthdate": {
+          "type": "string"
+        },
         "colors": {
           "type": "array",
           "items": {
