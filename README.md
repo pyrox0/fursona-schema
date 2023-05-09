@@ -1,5 +1,8 @@
 # fursona-schema
-Schema for .well-known/fursona, available in JSON Schema and Cue formats.
+Schema for .well-known/fursona and .well-known/fursona.json, available in JSON Schema and Cue formats.
+
+## Implementor Notes
+* Please note that the path `fursona.json` is valid now, but `fursona` should be preferred when available.
 
 A website that parses and displays these can be found [here](https://fursona.gmem.ca), and its source code can be found [here](https://git.sr.ht/~gmem/well-known-fursona)! 
 
