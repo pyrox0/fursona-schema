@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://pyrox.dev/schemas/sonas",
+  "$id": "https://github.com/theHedgehog0/fursona-schema#sonas",
   "title": "Schema for .well-known/fursona",
   "description": "A description of someone's fursona(s).",
   "type": "object",
@@ -9,14 +9,14 @@
       "description": "The list of fursonas for this person.",
       "type": "array",
       "items": {
-        "$ref": "/schemas/sona"
+        "$ref": "#sona"
       }
     }
   },
-  "required": ["sonas"],
+  "required": [ "sonas" ],
   "$defs": {
     "sona": {
-      "$id": "/schemas/sona",
+      "$id": "https://github.com/theHedgehog0/fursona-schema#sona",
       "description": "A single fursona",
       "type": "object",
       "properties": {
