@@ -9,14 +9,14 @@
       "description": "The list of fursonas for this person.",
       "type": "array",
       "items": {
-        "$ref": "sona"
+        "$ref": "#/definitions/sona"
       }
     }
   },
   "required": [
     "sonas"
   ],
-  "$defs": {
+  "definitions": {
     "sona": {
       "$id": "sona",
       "description": "A single fursona",
