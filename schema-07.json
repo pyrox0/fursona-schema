@@ -69,7 +69,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "#([0-9a-f]){3,6}"
+            "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
           }
         }
       }
