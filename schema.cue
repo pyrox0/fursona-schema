@@ -25,5 +25,5 @@ import (
 	age?: int
 	birthdate?: string
 	description: strings.MaxRunes(250)
-	colors?: [...=~"#([0-9a-f]){3,6}"]
+	colors?: [...=~"^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$"]
 }
