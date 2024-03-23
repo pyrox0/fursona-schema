@@ -5,13 +5,13 @@ import (
 	"list"
 )
 
-// Schema for .well-known/fursona
+// Schema for .well-known/fursona, version 1.1
 //
 // A description of someone's fursona(s).
 @jsonschema(schema="https://json-schema.org/draft/2020-12/schema")
 @jsonschema(id="https://pyrox.dev/schemas/sonas")
 
-// The list of fursonas for this person.
+// The list of fursonas.
 #sonas: list.MinItems([#sona], 1)
 
 #sona: {
