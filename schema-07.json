@@ -21,7 +21,9 @@
       "$id": "sona",
       "description": "A single fursona",
       "type": "object",
-      "required": ["ref"],
+      "required": [
+        "ref"
+      ],
       "properties": {
         "name": {
           "type": "string"
@@ -49,6 +51,9 @@
             "ftp"
           ]
         },
+        "refAlt": {
+          "type": "string"
+        },
         "avatar": {
           "type": "string",
           "format": "uri",
@@ -58,6 +63,9 @@
             "gemini",
             "ftp"
           ]
+        },
+        "avatarAlt": {
+          "type": "string"
         },
         "age": {
           "type": "integer"

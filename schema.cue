@@ -20,8 +20,10 @@ import (
 	pronouns?: string
 	gender?: string
 	species: string
-	ref?: =~"(https?|ftp|gemini)(:\/\/).+"
 	avatar?: =~"(https?|ftp|gemini)(:\/\/).+"
+	avatarAlt?: string
+	ref?: =~"(https?|ftp|gemini)(:\/\/).+"
+	refAlt?: string
 	age?: int
 	birthdate?: string
 	description: strings.MaxRunes(250)
