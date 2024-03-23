@@ -7,7 +7,9 @@
             "species": "Species",
             "description": "A description of the fursona, max 250 characters",
             "ref": "https://example.com/ref",
+            "refAlt": "Some alt text describing the ref sheet.",
             "avatar": "http://example.com/avatar.png",
+            "avatarAlt": "Some alt text describing the avatar.",
             "age": 25,
             "birthdate": "1996-01-01T20:20:39+00:00",
             "colors": [
