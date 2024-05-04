@@ -1,5 +1,12 @@
 # Changelog for .well-known/fursona
 
+## v1.2
+SchemaStore support release
+
+### Changes
+* Add descriptions to each field in `draft-07.json`
+* Updates the ID to be consistant with SchemaStore.
+
 ## v1.1
 Accessibility improvement release
 
