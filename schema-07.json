@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/pyrox0/fursona-schema#",
+  "$id": "https://raw.githubusercontent.com/pyrox0/fursona-schema/main/schema-07.json",
+  "additionalProperties": false,
   "title": "Schema for .well-known/fursona, version 1.1",
   "description": "A description of someone's fursona(s).",
   "type": "object",
@@ -26,22 +27,28 @@
       ],
       "properties": {
         "name": {
+          "description": "The name of this fursona.",
           "type": "string"
         },
         "pronouns": {
+          "description": "This fursona's pronouns.",
           "type": "string"
         },
         "gender": {
+          "description": "This fursona's gender.",
           "type": "string"
         },
         "species": {
+          "description": "This fursona's species.",
           "type": "string"
         },
         "description": {
+          "description": "Any additional notes or links for this fursona.",
           "type": "string",
           "maxLength": 250
         },
         "ref": {
+          "description": "A link to a ref for this fursona. Should be an image file.",
           "type": "string",
           "format": "uri",
           "qt-uri-protocols": [
@@ -52,9 +59,11 @@
           ]
         },
         "refAlt": {
+          "description": "Alt text to be added to the ref sheet image. Not required but highly encouraged.",
           "type": "string"
         },
         "avatar": {
+          "description": "An image file to use as an avatar, if needed.",
           "type": "string",
           "format": "uri",
           "qt-uri-protocols": [
@@ -65,19 +74,23 @@
           ]
         },
         "avatarAlt": {
+          "description": "Alt text for the avatar. Like refAlt, not required but highly encouraged.",
           "type": "string"
         },
         "age": {
+          "description": "This fursona's age.",
           "type": "integer"
         },
         "birthdate": {
+          "description": "The birthdate of the fursona.",
           "type": "string"
         },
         "colors": {
+          "description": "The fursona's colors. Should be an array of 3 or 6-digit hex codes, which can be prefixed with a hashtag.",
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$"
+            "pattern": "^#?([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$"
           }
         }
       }
