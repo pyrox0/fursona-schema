@@ -13,10 +13,30 @@
       }
     }
   },
-  "required": [
-    "sonas"
-  ],
+  "required": ["sonas"],
   "$defs": {
+    "galleryItem": {
+      "$id": "https://github.com/pyrox0/fursona-schema#galleryItem",
+      "description": "An image gallery item",
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": ["http", "https", "gemini", "ftp"]
+        },
+        "imageAlt": {
+          "type": "string"
+        },
+        "imageAttribution": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    },
     "sona": {
       "$id": "https://github.com/pyrox0/fursona-schema#sona",
       "description": "A single fursona",
@@ -41,12 +61,7 @@
         "ref": {
           "type": "string",
           "format": "uri",
-          "qt-uri-protocols": [
-            "http",
-            "https",
-            "gemini",
-            "ftp"
-          ]
+          "qt-uri-protocols": ["http", "https", "gemini", "ftp"]
         },
         "refAlt": {
           "type": "string"
@@ -54,12 +69,7 @@
         "avatar": {
           "type": "string",
           "format": "uri",
-          "qt-uri-protocols": [
-            "http",
-            "https",
-            "gemini",
-            "ftp"
-          ]
+          "qt-uri-protocols": ["http", "https", "gemini", "ftp"]
         },
         "avatarAlt": {
           "type": "string"
@@ -75,6 +85,12 @@
           "items": {
             "type": "string",
             "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$"
+          }
+        },
+        "gallery": {
+          "type": "array",
+          "items": {
+            "$ref": "#galleryItem"
           }
         }
       }

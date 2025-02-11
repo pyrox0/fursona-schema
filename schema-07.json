@@ -18,6 +18,36 @@
     "sonas"
   ],
   "definitions": {
+    "galleryItem": {
+      "$id": "galleryItem",
+      "description": "An image gallery item",
+      "type": "object",
+      "required": [
+        "image"
+      ],
+      "properties": {
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "http",
+            "https",
+            "gemini",
+            "ftp"
+          ]
+        },
+        "imageAlt": {
+          "type": "string"
+        },
+        "imageAttribution": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    },
     "sona": {
       "$id": "sona",
       "description": "A single fursona",
@@ -62,6 +92,10 @@
           "description": "Alt text to be added to the ref sheet image. Not required but highly encouraged.",
           "type": "string"
         },
+        "refAttribution": {
+          "description": "Attribution for the ref sheet, in whatever format you want. Not required, but strongly encouraged.",
+          "type": "string"
+        },
         "avatar": {
           "description": "An image file to use as an avatar, if needed.",
           "type": "string",
@@ -75,6 +109,10 @@
         },
         "avatarAlt": {
           "description": "Alt text for the avatar. Like refAlt, not required but highly encouraged.",
+          "type": "string"
+        },
+        "avatarAttribution": {
+          "description": "Attribution for the avatar image, in whatever format you want. Not required, but strongly encouraged.",
           "type": "string"
         },
         "age": {
@@ -91,6 +129,13 @@
           "items": {
             "type": "string",
             "pattern": "^#?([0-9a-fA-F]{6}|[0-9a-fA-F]{3})$"
+          }
+        },
+        "gallery": {
+          "description": "A list of additional images to display",
+          "type": "array",
+          "items": {
+            "$ref": "galleryItem"
           }
         }
       }
